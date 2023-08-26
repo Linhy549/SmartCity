@@ -1,4 +1,4 @@
-# SmartCity
+# SmartCity - Back End
 
 ## Env setup:
 
