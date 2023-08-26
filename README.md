@@ -30,6 +30,6 @@
   
   > name: New York State Museum placeDes: Des1 like: 4 dislike: 13 rate: 3.4842402319116337 name: New York State Capitol placeDes: Des2 like: 15 dislike: 0 rate: 1.3952788761461528 name: Albany Institute of History & Art placeDes: Des3 like: 14 dislike: 20 rate: 3.277956695259627 name: Washington Park placeDes: Des4 like: 10 dislike: 18 rate: 1.413119426915197 name: The Egg placeDes: Des5 like: 13 dislike: 16 rate: 0.48218463417843527 name: Palace Theatre placeDes: Des6 like: 10 dislike: 17 rate: 1.7476175368992601
 
-## Works haven been done:
+## Work have been done:
 
 - 8-26： Implement showAllPlace API call.
