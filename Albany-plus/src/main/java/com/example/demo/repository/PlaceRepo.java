@@ -1,19 +1,25 @@
 package com.example.demo.repository;
 
+import java.util.HashMap;
+
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.client.HttpClientErrorException.Forbidden;
 
 import com.example.demo.model.Place;
 
 @Repository
 public class PlaceRepo {
-	private Place place;
-	
+
+	private String[] placeName = {"New York State Museum", "New York State Capitol", 
+			"Albany Institute of History & Art", "Washington Park", "The Egg", "Palace Theatre"};
+	private String[] placeDesLiSt = {"Des1", "Des2", "Des3", "Des4", "Des5", "Des6", "Des7"};
+
+
 	public Place[] showAllPlace() {
-		Place[] places = new Place[5];
-		
-		//String name, String placeDes, int like, int dislike, double rate
+		Place[] places = new Place[6];
 		for(int i = 0; i < places.length; i++) {
-			places[i] = new Place(randomString(5), randomString(10),
+			places[i] = new Place(placeName[i], placeDesLiSt[i],
 					randomInt(0, 20), randomInt(0, 20), randomDouble(0, 5));
 		}
 		return places;
@@ -27,17 +33,5 @@ public class PlaceRepo {
 	public double randomDouble(int first, int last) {
 		return (Math.random() * (last - first));
 	}
-	
-	public String randomString(int length) {
-		String str = "abcdefghijklmnopqrstuvwxyz";
-		String strUpper = str.toUpperCase();
-		str = str + strUpper;
-		String res = "";
-		for(int i = 1; i <= length; i++) {
-			res = res +str.charAt(randomInt(0, str.length() -1));
-		}
-		return res;
-	}
-	
 
 }
