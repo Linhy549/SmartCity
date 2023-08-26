@@ -16,7 +16,7 @@ public class Place {
 	    this.like = like;
 	    this.dislike = dislike;
 	    this.rate = rate;
-	    setPlaceId(++count);
+//	    setPlaceId(++count);
 	    
 	  }
 
